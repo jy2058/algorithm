@@ -6,15 +6,14 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-/*
+/**
     https://www.acmicpc.net/problem/2840
     2840 / 행운의 바퀴
     실버 4
+
+    바퀴를 회전하면서 각 바퀴의 문자를 알아내는 문제
  */
-public class 임시 {
-    /*
-        바퀴를 회전하면서 각 바퀴의 문자를 알아내는 문제
-     */
+public class 구현_회전문자_2840 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
