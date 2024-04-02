@@ -11,13 +11,11 @@ import java.util.Arrays;
  */
 public class 문자열_내림차순정렬_프로그래머스_12917 {
     public static void main(String[] args) throws IOException {
-        Solution so = new Solution();
-        System.out.println(so.solution("Zbcdefg"));
+        System.out.println(solution("Zbcdefg"));
     }
-}
 
-class Solution {
-    public String solution(String s) {
+
+    public static String solution(String s) {
         char[] chars = s.toCharArray();
         Arrays.sort(chars);
 

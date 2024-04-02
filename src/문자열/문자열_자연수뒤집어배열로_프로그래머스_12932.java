@@ -10,13 +10,10 @@ import java.io.IOException;
  */
 public class 문자열_자연수뒤집어배열로_프로그래머스_12932 {
     public static void main(String[] args) throws IOException {
-        Solution so = new Solution();
-        System.out.println(so.solution(12345));
+        System.out.println(solution(12345));
     }
-}
 
-class Solution {
-    public int[] solution(long n) {
+    public static int[] solution(long n) {
         String str = Long.toString(n);
         // 입력받은 수를 뒤집기
         StringBuilder sb = new StringBuilder(str).reverse();
