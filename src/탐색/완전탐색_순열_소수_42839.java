@@ -1,4 +1,4 @@
-package 완전탐색;
+package 탐색;
 
 import java.io.IOException;
 import java.util.HashSet;
