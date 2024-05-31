@@ -23,22 +23,21 @@ import java.util.Queue;
  * 게임 맵의 상태 maps가 매개변수로 주어질 때, 캐릭터가 상대 팀 진영에 도착하기 위해서 지나가야 하는 칸의 개수의 최솟값을 return 하도록 solution 함수를 완성해주세요. 단, 상대 팀 진영에 도착할 수 없을 때는 -1을 return 해주세요.
  */
 public class BFS_게임맵최단거리_1844 {
-    int n,m;    // 맵의 가로,세로길이
-    int answer = -1;    // 목적지에 도달하지 못했을 때 반환 값 -1로 초기화
+    public static int n,m;    // 맵의 가로,세로길이
+    public static int answer = -1;    // 목적지에 도달하지 못했을 때 반환 값 -1로 초기화
 
-    int[] dx = {-1, 1, 0, 0};   // 상, 하 이동
-    int[] dy = {0, 0, -1, 1};   // 좌, 우 이동
+    public static int[] dx = {-1, 1, 0, 0};   // 상, 하 이동
+    public static int[] dy = {0, 0, -1, 1};   // 좌, 우 이동
 
-    boolean[][] visited;    // 방문 여부 체크
+    public static boolean[][] visited;    // 방문 여부 체크
 
     public static void main(String[] args) throws IOException {
-        Main main = new Main();
         int[][] maps = {{1, 0, 1, 1, 1}, {1, 0, 1, 0, 1}, {1, 0, 1, 1, 1}, {1, 1, 1, 0, 1}, {0, 0, 0, 0, 1}};
 
-        System.out.println(main.solution(maps));
+        System.out.println(solution(maps));
     }
 
-    public int solution(int[][] maps) {
+    public static int solution(int[][] maps) {
         n = maps.length;
         m = maps[0].length;
 
@@ -47,7 +46,7 @@ public class BFS_게임맵최단거리_1844 {
         return bfs(0, 0, maps);
     }
 
-    private int bfs(int x, int y, int[][] maps) {
+    private static int bfs(int x, int y, int[][] maps) {
         // 팀색을 위한 큐 생성
         Queue<int[]> queue = new LinkedList<>();
         // 시작점을 큐에 추가하고 방문처리
