@@ -14,7 +14,7 @@ package 탐색;
  * Input: root = [6,7,8,2,7,1,3,9,null,1,4,null,null,null,5]
  * Output: 19
  */
-public class BFS_가장깊은리프합계_1302 {
+public class DFS_가장깊은리프합계_1302 {
     static int maxLevel = 0;  // 가장 깊은 트리레밸을 저장할 변수
     static int sum = 0; // 합계를 저장할 변수
 
