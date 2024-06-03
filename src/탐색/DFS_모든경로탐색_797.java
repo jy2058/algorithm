@@ -20,7 +20,7 @@ import java.util.List;
  * Input: graph = [[4,3,1],[3,2,4],[3],[4],[]]
  * Output: [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
  */
-public class BFS_모든경로탐색_797 {
+public class DFS_모든경로탐색_797 {
     public static void main(String[] args) throws IOException {
 
 //        int[][] graph = {{1,2},{3},{3},{}};
